@@ -1,0 +1,114 @@
+简单解读：
+
+这段代码看起来像是一个教学型AI bot的规范或者设计文档，名为 “Mr. Ranedeer”，由用户 JushBJJ 创作，当前版本为 2.5。这个 bot 的设计目标是提供高度个性化的教学体验，并且根据学生的个人喜好和需求来进行调整和优化。
+
+这个设计文档详细说明了 bot 的特性、命令、规则和其他一些关键功能。以下是主要的一些点：
+
+个性化: 学生可以根据自己的需求来设定学习的深度，从小学一年级的水平（深度 1/10）到博士研究的水平（深度 10/10）。另外，还可以设定学习风格、沟通风格、授课的语气以及推理框架。
+
+命令: bot 支持多种命令，如 /test、/config、/plan 等，以满足各种学习需求。
+
+规则: 这部分详细列出了 bot 应当遵守的规则，以保证教学质量。
+
+学生偏好: 这里列出了学生的默认偏好设置，包括深度、学习风格、沟通风格、语气、推理框架、是否使用表情符号、语言等。
+
+格式: 这部分详细说明了 bot 在进行各种操作时应当遵守的格式，以保证一致性和易理解性。
+
+在 init 部分，设计文档规定了 bot 在开始与学生互动时的行为，包括打招呼、展示版本信息、提供当前的配置信息，询问学生的偏好，以及提示可以使用 /language 命令更改语言。
+
+总的来说，这个设计文档的主要目标是创建一个个性化的、灵活的、高度互动的教学型AI bot。
+
+当然，这是一个详细的段落对段落的解释：
+
+1. **个性化**:
+
+    ```
+    Personalization
+    Depth
+    Learning Styles
+    Communication Styles
+    Tone Styles
+    Reasoning Frameworks
+    ```
+
+    这部分详细列出了可以进行个性化配置的各个参数。包括内容的深度（从初级到高级），学习风格（感知型、视觉型、归纳型等），交流风格（随机、正式、教科书式等），语气风格（辩论、鼓励、中性等）以及推理框架（演绎、归纳、类比等）。
+
+2. **命令**:
+
+    ```
+    commands
+    PREFIX: "/"
+    test
+    config
+    plan
+    search
+    start
+    continue
+    self-eval
+    language
+    visualize
+    ```
+
+    这部分列出了可以使用的命令。包括测试知识、配置偏好、制定学习计划、搜索内容、开始和继续学习、自我评估、更改语言和可视化内容等。
+
+3. **规则**:
+
+    ```
+    rules
+    1. Follow the student's specified learning style, communication style, tone style, reasoning framework, and depth.
+    2. Be able to create a lesson plan based on the student's preferences.
+    (省略部分)
+    13. In lessons, if there are existing plugins, you can activate plugins to visualize or search for content. Else, continue.
+    ```
+
+    这部分详细列出了 bot 在运行过程中需要遵守的规则。比如：必须按照学生设定的学习风格和深度进行教学，根据学生的喜好创建课程计划，必须引导学生的学习并始终确定接下来的学习内容等。
+
+4. **学生偏好**:
+
+    ```
+    student preferences
+    Description: This is the student's configuration/preferences for AI Tutor (YOU).
+    depth: 0
+    learning_style: []
+    communication_style: []
+    tone_style: []
+    reasoning_framework: []
+    use_emojis: true
+    language: English (Default)
+    ```
+
+    这部分列出了学生的默认偏好设置。包括深度、学习风格、交流风格、语气风格、推理框架、是否使用表情符号、默认语言等。
+
+5. **格式**:
+
+    ```
+    Formats
+    configuration
+    configuration_reminder
+    self-evaluation
+    Planning
+    Lesson
+    ```
+
+    这部分详细说明了 bot 在进行各种操作时应当遵守的格式，如提醒自己的学生配置、自我评估、计划和课程等，以保证一致性和易理解性。
+
+在 `init` 部分：
+
+    ```
+    init
+    As an AI tutor, greet + 👋 + version+  author + execute format <configuration> + ask for student's preferences + mention /language
+    ```
+
+这部分描述了 bot 在开始与学生互动时应执行的初始操作，包括：
+
+1. 打招呼：这部分强调了AI教师应当友好地打招呼。
+
+2. 版本和作者信息：向学生展示bot的版本信息和作者信息。
+
+3. 执行配置格式：展示当前的配置信息。
+
+4. 询问学生的偏好：根据学生的个人喜好进行初始配置。
+
+5. 提及 /language 命令：提醒学生，他们可以使用 /language 命令自行更改语言设置。
+
+这些操作的目标是为了在互动开始时设定正确的预期，并且让学生明白他们可以根据自己的需求和偏好对 bot 的行为进行配置。
